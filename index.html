@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продаж Steam Акаунта — Топ Бібліотека</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b0e14;
+            color: #c5c8c9;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #171d25;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+            border: 1px solid #2a475e;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            color: #ffffff;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .header p {
+            color: #66c0f4;
+            font-size: 16px;
+        }
+        .price-card {
+            background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+            border: 2px solid #66c0f4;
+        }
+        .price-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .price-item {
+            flex: 1;
+            min-width: 200px;
+        }
+        .price-label {
+            font-size: 14px;
+            color: #8f98a0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #ff5555;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .val-price {
+            font-size: 32px;
+            color: #a4d007;
+            font-weight: bold;
+        }
+        .special-badge {
+            display: inline-block;
+            background: #e5a93c;
+            color: #111;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .section-title {
+            color: #66c0f4;
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2a475e;
+            padding-bottom: 8px;
+        }
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .game-item {
+            background: #101822;
+            padding: 12px 15px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 3px solid #66c0f4;
+        }
+        .game-name {
+            color: #ffffff;
+            font-weight: 500;
+        }
+        .game-price {
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+        .features-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .features-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .features-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #a4d007;
+            font-weight: bold;
+        }
+        .btn-contact {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #7360f2;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(115, 96, 242, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔥 STEAM АКАУНТ ЗА СУПЕРЦІНОЮ 🔥</h1>
+            <p>Понад 80+ ігор у бібліотеці за ціною лише 2-х ігор!</p>
+        </div>
 
+        <div class="price-card">
+            <div class="price-row">
+                <div class="price-item">
+                    <div class="price-label">Загальна вартість ігор у Steam</div>
+                    <div class="old-price">~8 500 грн</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-label">Ціна продажу акаунта</div>
+                    <div class="val-price">1 500 грн <span style="font-size:18px; color:#ffffff;">(для своїх)</span> / 2 000 грн</div>
+                </div>
+            </div>
+            <div class="special-badge">🔥 Ваша економія: понад 6 500 грн (80%OFF)!</div>
+        </div>
+
+        <div class="section-title">⭐ ТОПОВІ ПЛАТНІ ІГРИ В БІБЛІОТЕЦІ</div>
+        <div class="games-grid">
+            <div class="game-item"><span class="game-name">Battlefield 6</span><span class="game-price">~1 600 грн</span></div>
+            <div class="game-item"><span class="game-name">Rainbow Six Siege</span><span class="game-price">~700 грн</span></div>
+            <div class="game-item"><span class="game-name">Rust</span><span class="game-price">~600 грн</span></div>
+            <div class="game-item"><span class="game-name">Wild Terra 2</span><span class="game-price">~600 грн</span></div>
+            <div class="game-item"><span class="game-name">House Flipper</span><span class="game-price">~480 грн</span></div>
+            <div class="game-item"><span class="game-name">Tell Me Why</span><span class="game-price">~350 грн</span></div>
+            <div class="game-item"><span class="game-name">Breathedge</span><span class="game-price">~300 грн</span></div>
+            <div class="game-item"><span class="game-name">Moonlighter</span><span class="game-price">~300 грн</span></div>
+            <div class="game-item"><span class="game-name">Sir Brante</span><span class="game-price">~300 грн</span></div>
+            <div class="game-item"><span class="game-name">Garry's Mod</span><span class="game-price">~169 грн</span></div>
+        </div>
+
+        <div class="section-title">🎮 БЕЗКОШТОВНІ ХІТИ НА АКАУНТІ</div>
+        <p style="margin-bottom: 20px; color: #8f98a0;">CS2, THE FINALS, War Thunder, PUBG, Delta Force, Marvel Rivals, World of Tanks, Unturned та багато інших.</p>
+
+        <div class="section-title">✅ ПЕРЕВАГИ АКАУНТА</div>
+        <ul class="features-list">
+            <li>Чистий профіль без жодних банів (VAC / Game Ban чисті).</li>
+            <li>Велика різноманітність: шутери, виживачі, симулятори, сюжетні ігри.</li>
+            <li>Швидка передача: віддаю пошту та всі дані одразу при зустрічі чи в особистих.</li>
+        </ul>
+
+        <div class="btn-contact">💬 ДЛЯ КУПІВЛІ НАПИШІТЬ В ОСОБИСТІ ПОВІДОМЛЕННЯ</div>
+    </div>
+</body>
+</html>
